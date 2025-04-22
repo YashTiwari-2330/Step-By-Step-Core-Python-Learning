@@ -3,11 +3,11 @@ orignal = num
 rev = 0
 
 while num > 0:
-    digit = num % 10
-    rev = rev * 10 + digit
-    num = num //10
+    rev = (rev * 10) + num % 10
+    num = num // 10
 
-if(orignal == rev):
-    print("palidrome")
+if orignal == rev:
+    print(f"{orignal} is palindrome")
+
 else:
-    print("Not palidrome")
+    print(F"{orignal} is not palindrome")
